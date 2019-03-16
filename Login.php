@@ -13,7 +13,7 @@ if(!empty($_POST["register-user"])) {
 	$error_message = 'Passwords should be same<br>'; 
 	}
 
-	/* Email Validation ???? Email ????????????????? */ 
+	/* Email Validation  Email */ 
 	if(!isset($error_message)) {
 		if (!filter_var($_POST["userEmail"], FILTER_VALIDATE_EMAIL)) {
 		$error_message = "Invalid Email Address";
@@ -37,10 +37,10 @@ if(!empty($_POST["register-user"])) {
 		$result = $db_handle->insertQuery($query);
 		if(!empty($result)) {
 			$error_message = "";
-			$success_message = "?????????????????????????????????";	
+			$success_message = "Register Successfully";
 			unset($_POST);
 		} else {
-			$error_message = "???????????????????";	
+			$error_message = Already Registered
 		}
 	}
 }
