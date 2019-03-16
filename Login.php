@@ -16,5 +16,5 @@
     </tbody>
   </table>
   <br>
-  <input type="submit" name="Submit" value="Login">
+  <input type="submit" name="Submit" value="Login to arisa system ">
 </form>
